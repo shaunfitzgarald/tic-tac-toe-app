@@ -1,38 +1,66 @@
+/* Pink Theme Styles */
+
+/* Set the background color for the entire app */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffc0cb; /* Pink */
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the game title with pink text */
+h1 {
+  color: #ff1493; /* Deep Pink */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the status message with pink text */
+.status {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff69b4; /* Hot Pink */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style the game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 4px;
+  justify-content: center;
+}
+
+/* Style the squares with pink backgrounds */
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  border: 2px solid #333;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #ffc0cb; /* Pink */
+}
+
+/* Change the square background on hover */
+.square:hover {
+  background-color: #ff69b4; /* Hot Pink */
+}
+
+/* Style the "Reset Game" button with pink background and white text */
+.reset-button {
+  background-color: #ff1493; /* Deep Pink */
   color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Change the button background on hover */
+.reset-button:hover {
+  background-color: #ff69b4; /* Hot Pink */
 }
